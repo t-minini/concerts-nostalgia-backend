@@ -4,15 +4,15 @@ const concertSchema = Schema(
   {
     tour: {
       type: String,
-      required: [true, 'Please, enter concert!'],
+      required: [false, 'Please, enter concert!'],
     },
     artist: {
       type: String,
-      required: [true, 'Please, enter artist!'],
+      required: [false, 'Please, enter artist!'],
     },
     year: {
       type: Number,
-      required: [true, 'Please, enter concert date!'],
+      required: [false, 'Please, enter concert date!'],
     },
     location: {
       type: String,
@@ -20,11 +20,11 @@ const concertSchema = Schema(
     },
     city: {
       type: String,
-      required: [true, 'Please, enter city!'],
+      required: [false, 'Please, enter city!'],
     },
     country: {
       type: String,
-      required: [true, 'Please, enter country!'],
+      required: [false, 'Please, enter country!'],
     },
     companion: [
       {
@@ -35,7 +35,7 @@ const concertSchema = Schema(
     ],
     rating: {
       type: Number,
-      required: [true, 'Please, enter rating!'],
+      required: [false, 'Please, enter rating!'],
       enum: [1, 2, 3, 4, 5],
     },
     images: {
@@ -44,14 +44,14 @@ const concertSchema = Schema(
     },
     background: {
       type: String,
-      required: true,
+      required: false,
       enum: [
         'background-one',
         'background-two',
         'background-three',
         'background-four',
         'background-five',
-      ], 
+      ],
     },
   },
   {

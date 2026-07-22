@@ -13,7 +13,7 @@ export const getConcerts = async (req, res) => {
 // get a concert
 export const getConcert = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { id: id } = req.params;
     const concert = await ConcertModel.findById(id);
     if (!concert) {
       return res.status(404).json({ message: 'Concert not found!' });
