@@ -31,12 +31,12 @@ API designed and developed to enhance the functionality of "Concerts Nostalgia",
 | **PUT**    | /concerts/edit/:id   | _To edit the details of a single concert_  |
 | **DELETE** | /concerts/delete/:id | _To delete a single concert_               |
 
-### Technologies Used
+### Tech Stack
 
-- [NodeJS](https://nodejs.org/) This is a cross-platform runtime environment built on Chrome's V8 JavaScript engine used in running JavaScript codes on the server. It allows for installation and managing of dependencies and communication with databases.
-- [ExpressJS](https://www.expresjs.org/) This is a NodeJS web application framework.
-- [MongoDB](https://www.mongodb.com/) This is a free open source NOSQL document database with scalability and flexibility. Data are stored in flexible JSON-like documents.
-- [Mongoose ODM](https://mongoosejs.com/) This makes it easy to write MongoDB validation by providing a straight-forward, schema-based solution to model to application data.
+- [Node.js](https://nodejs.org/) — JavaScript runtime for the server
+- [Express](https://expressjs.com/) — web application framework
+- [MongoDB](https://www.mongodb.com/) — NoSQL document database
+- [Mongoose](https://mongoosejs.com/) — schema-based ODM for MongoDB
 
 ### Authors
 
